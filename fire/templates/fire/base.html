@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+	<head>
+		
+		<title>{%block title%}
+		{%endblock%}</title>
+		
+		<script type="text/javascript" src="{% static 'fire/jquery-3.3.1.min.js' %}"></script>		
+		<script type="text/javascript" charset="utf8" src="{% static 'fire/DataTables/datatables.js' %}"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'fire/DataTables/datatables.css' %}"/>
+		<script type="text/javascript" charset="utf8" src="{% static 'fire/js/bootstrap.min.js' %}"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'fire/css/bootstrap.min.css' %}"/>
+		<link rel="icon" href="{% static 'fire/logo2.ico' %}">
+	</head>
+	<body>
+	
+	<center><a class="btn btn-primary" href="/">HOME</a></center>
+	{% block content%}
+	{% endblock %}
+	</body>
+</html>
